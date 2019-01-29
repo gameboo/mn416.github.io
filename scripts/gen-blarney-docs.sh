@@ -5,8 +5,13 @@ git clone -b refactor https://github.com/mn416/blarney
 pushd .
 cd blarney/Haskell/
 haddock --html -o ../../../blarney \
+  --source-module=https://github.com/mn416/blarney/blob/master/Haskell/%{FILE} \
+  --source-entity=https://github.com/mn416/blarney/blob/master/Haskell/%{FILE}#L%{LINE} \
   Blarney.hs \
   Blarney/RAM.hs \
-  Blarney/Queue.hs
+  Blarney/Queue.hs \
+  Blarney/BitPat.hs \
+  Blarney/BitScan.hs \
+  Blarney/Stream.hs
 popd
 rm -rf blarney
