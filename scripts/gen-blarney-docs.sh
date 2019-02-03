@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf blarney
-git clone -b refactor https://github.com/mn416/blarney
+git clone https://github.com/mn416/blarney
 pushd .
 cd blarney/Haskell/
 haddock --html -o ../../../blarney \
