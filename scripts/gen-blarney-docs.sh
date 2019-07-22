@@ -12,6 +12,10 @@ haddock --html -o ../../../blarney \
   Blarney/Queue.hs \
   Blarney/BitPat.hs \
   Blarney/BitScan.hs \
-  Blarney/Stream.hs
+  Blarney/Stream.hs \
+  Blarney/Connectable.hs \
+  Blarney/Option.hs \
+  Blarney/PulseWire.hs \
+  Blarney/SourceSink.hs
 popd
 rm -rf blarney
